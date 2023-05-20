@@ -471,7 +471,7 @@ endmodule
 
 ### 2. 模块架构
 
-![image-20230520184053537](pic\image-20230520184053537.png)
+![image-20230520184053537](pic/image-20230520184053537.png)
 
 顶层模块digtial_control_unit共包含以下子模块：
 
@@ -481,7 +481,7 @@ endmodule
 基带模块，连接AFE，进行基带信号的编解码。
 基带的整体架构如下图所示：
 
-![image-20230520184133697](pic\image-20230520184133697.png)
+![image-20230520184133697](pic/image-20230520184133697.png)
 
 共分为modified miller decoder，parity check，manchester encoder，parity add四个子模块。采用 modified miller编码作为输入，manchester编码作为输入，parity check用于鉴别帧类型以及检查校验位。parity add用于计算输出帧的校验位。
 
@@ -491,7 +491,7 @@ endmodule
 
 存储控制模块，连接RRAM CIM模块，已经完成实现对存储器的读写控制。写入采用write verify算法。模块计算采用类似于Shimeng Yu的XNOR RRAM结构，采用数字存算原理，仅需通过访存和加法器即可完成运算，相比老版本电路节省大量同或门。
 
-![image-20230520184741172](pic\image-20230520184741172.png)
+![image-20230520184741172](pic/image-20230520184741172.png)
 
 #### 2.3 ....
 
@@ -529,6 +529,6 @@ endmodule
 基带测试序列依次为：
 REQA（激活模块），READ（读取存储器0x244地址数据），WRITE（向存储器0x244地址写入0x05），HLAT（模块休眠），WAKEUP（模块唤醒），FAIL（错误数据测试），TEST（模块测试模式），ADEN（ADC采样模式），CALC（计算功能）
 
-![image-20230520185041988](pic\image-20230520185041988.png)
+![image-20230520185041988](pic/image-20230520185041988.png)
 
 (仿真波形图+文字解释)
