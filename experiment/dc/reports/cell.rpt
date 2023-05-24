@@ -1,0 +1,279 @@
+ 
+****************************************
+Report : cell
+Design : cic_filter
+Version: O-2018.06-SP1
+Date   : Tue May  2 16:04:00 2023
+****************************************
+
+Attributes:
+   BO - reference allows boundary optimization
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U9                        CLKBUFX8        slow            23.284800 
+U10                       CLKBUFX8        slow            23.284800 
+U11                       CLKBUFX8        slow            23.284800 
+U12                       CLKBUFX8        slow            23.284800 
+U13                       CLKBUFX8        slow            23.284800 
+U14                       CLKBUFX8        slow            23.284800 
+U15                       CLKBUFX8        slow            23.284800 
+U16                       CLKBUFX8        slow            23.284800 
+U17                       CLKBUFX8        slow            23.284800 
+U18                       CLKBUFX8        slow            23.284800 
+U19                       CLKBUFX8        slow            23.284800 
+U20                       CLKBUFX8        slow            23.284800 
+U21                       CLKBUFX8        slow            23.284800 
+U22                       CLKBUFX8        slow            23.284800 
+U23                       CLKBUFX8        slow            23.284800 
+U24                       CLKBUFX8        slow            23.284800 
+U25                       CLKBUFX8        slow            23.284800 
+U26                       CLKBUFX8        slow            23.284800 
+U27                       CLKBUFX8        slow            23.284800 
+U28                       XOR2X1          slow            26.611200 
+U29                       AND2X1          slow            13.305600 
+U30                       XOR2X1          slow            26.611200 
+U31                       AND2X1          slow            13.305600 
+U32                       XOR2X1          slow            26.611200 
+U33                       AND2X1          slow            13.305600 
+U34                       XOR2X1          slow            26.611200 
+U35                       AND2X1          slow            13.305600 
+U36                       XOR2X1          slow            26.611200 
+U37                       AND2X1          slow            13.305600 
+U38                       XOR2X1          slow            26.611200 
+U39                       AND2X1          slow            13.305600 
+U40                       XOR2X1          slow            26.611200 
+U41                       AND2X1          slow            13.305600 
+U42                       XOR2X1          slow            26.611200 
+U43                       AND2X1          slow            13.305600 
+U44                       XOR2X1          slow            26.611200 
+U45                       AND2X1          slow            13.305600 
+U46                       XOR2X1          slow            26.611200 
+U47                       AND2X1          slow            13.305600 
+U48                       XOR2X1          slow            26.611200 
+U49                       AND2X1          slow            13.305600 
+U50                       XOR2X1          slow            26.611200 
+U51                       AND2X1          slow            13.305600 
+U52                       XOR2X1          slow            26.611200 
+U53                       AND2X1          slow            13.305600 
+U54                       XOR2X1          slow            26.611200 
+U55                       AND2X1          slow            13.305600 
+U56                       XOR2X1          slow            26.611200 
+U57                       AND2X1          slow            13.305600 
+U58                       XOR2X1          slow            26.611200 
+U59                       AND2X1          slow            13.305600 
+U60                       XOR2X1          slow            26.611200 
+U61                       AND2X1          slow            13.305600 
+U62                       XOR2X1          slow            26.611200 
+U63                       AND2X1          slow            13.305600 
+U64                       XOR2X1          slow            26.611200 
+add_13                    cic_filter_DW01_add_1           1287.316810
+                                                                    BO, h
+add_14                    cic_filter_DW01_add_0           1287.316810
+                                                                    BO, h
+div                       divider                         618.710408
+                                                                    h, n
+out_reg_reg[0]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[1]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[2]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[3]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[4]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[5]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[6]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[7]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[8]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[9]            DFFRHQXL        slow            69.854401 n
+out_reg_reg[10]           DFFRHQXL        slow            69.854401 n
+out_reg_reg[11]           DFFRHQXL        slow            69.854401 n
+out_reg_reg[12]           DFFRHQXL        slow            69.854401 n
+out_reg_reg[13]           DFFRHQXL        slow            69.854401 n
+out_reg_reg[14]           DFFRHQXL        slow            69.854401 n
+out_reg_reg[15]           DFFRHQXL        slow            69.854401 n
+out_reg_reg[16]           DFFRHQXL        slow            69.854401 n
+out_reg_reg[17]           DFFRHQXL        slow            69.854401 n
+out_reg_reg[18]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[0]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[1]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[2]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[3]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[4]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[5]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[6]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[7]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[8]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[9]           DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[10]          DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[11]          DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[12]          DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[13]          DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[14]          DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[15]          DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[16]          DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[17]          DFFRHQXL        slow            69.854401 n
+sub1_nxt_reg[18]          DFFRHQXL        slow            69.854401 n
+sub1_reg[0]               DFFRHQXL        slow            69.854401 n
+sub1_reg[1]               DFFRHQXL        slow            69.854401 n
+sub1_reg[2]               DFFRHQXL        slow            69.854401 n
+sub1_reg[3]               DFFRHQXL        slow            69.854401 n
+sub1_reg[4]               DFFRHQXL        slow            69.854401 n
+sub1_reg[5]               DFFRHQXL        slow            69.854401 n
+sub1_reg[6]               DFFRHQXL        slow            69.854401 n
+sub1_reg[7]               DFFRHQXL        slow            69.854401 n
+sub1_reg[8]               DFFRHQXL        slow            69.854401 n
+sub1_reg[9]               DFFRHQXL        slow            69.854401 n
+sub1_reg[10]              DFFRHQXL        slow            69.854401 n
+sub1_reg[11]              DFFRHQXL        slow            69.854401 n
+sub1_reg[12]              DFFRHQXL        slow            69.854401 n
+sub1_reg[13]              DFFRHQXL        slow            69.854401 n
+sub1_reg[14]              DFFRHQXL        slow            69.854401 n
+sub1_reg[15]              DFFRHQXL        slow            69.854401 n
+sub1_reg[16]              DFFRHQXL        slow            69.854401 n
+sub1_reg[17]              DFFRHQXL        slow            69.854401 n
+sub1_reg[18]              DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[0]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[1]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[2]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[3]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[4]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[5]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[6]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[7]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[8]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[9]           DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[10]          DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[11]          DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[12]          DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[13]          DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[14]          DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[15]          DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[16]          DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[17]          DFFRHQXL        slow            69.854401 n
+sub2_nxt_reg[18]          DFFRHQXL        slow            69.854401 n
+sub2_reg[0]               DFFRHQXL        slow            69.854401 n
+sub2_reg[1]               DFFRHQXL        slow            69.854401 n
+sub2_reg[2]               DFFRHQXL        slow            69.854401 n
+sub2_reg[3]               DFFRHQXL        slow            69.854401 n
+sub2_reg[4]               DFFRHQXL        slow            69.854401 n
+sub2_reg[5]               DFFRHQXL        slow            69.854401 n
+sub2_reg[6]               DFFRHQXL        slow            69.854401 n
+sub2_reg[7]               DFFRHQXL        slow            69.854401 n
+sub2_reg[8]               DFFRHQXL        slow            69.854401 n
+sub2_reg[9]               DFFRHQXL        slow            69.854401 n
+sub2_reg[10]              DFFRHQXL        slow            69.854401 n
+sub2_reg[11]              DFFRHQXL        slow            69.854401 n
+sub2_reg[12]              DFFRHQXL        slow            69.854401 n
+sub2_reg[13]              DFFRHQXL        slow            69.854401 n
+sub2_reg[14]              DFFRHQXL        slow            69.854401 n
+sub2_reg[15]              DFFRHQXL        slow            69.854401 n
+sub2_reg[16]              DFFRHQXL        slow            69.854401 n
+sub2_reg[17]              DFFRHQXL        slow            69.854401 n
+sub2_reg[18]              DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[0]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[1]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[2]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[3]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[4]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[5]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[6]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[7]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[8]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[9]           DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[10]          DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[11]          DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[12]          DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[13]          DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[14]          DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[15]          DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[16]          DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[17]          DFFRHQXL        slow            69.854401 n
+sub3_nxt_reg[18]          DFFRHQXL        slow            69.854401 n
+sub3_reg[0]               DFFRHQXL        slow            69.854401 n
+sub3_reg[1]               DFFRHQXL        slow            69.854401 n
+sub3_reg[2]               DFFRHQXL        slow            69.854401 n
+sub3_reg[3]               DFFRHQXL        slow            69.854401 n
+sub3_reg[4]               DFFRHQXL        slow            69.854401 n
+sub3_reg[5]               DFFRHQXL        slow            69.854401 n
+sub3_reg[6]               DFFRHQXL        slow            69.854401 n
+sub3_reg[7]               DFFRHQXL        slow            69.854401 n
+sub3_reg[8]               DFFRHQXL        slow            69.854401 n
+sub3_reg[9]               DFFRHQXL        slow            69.854401 n
+sub3_reg[10]              DFFRHQXL        slow            69.854401 n
+sub3_reg[11]              DFFRHQXL        slow            69.854401 n
+sub3_reg[12]              DFFRHQXL        slow            69.854401 n
+sub3_reg[13]              DFFRHQXL        slow            69.854401 n
+sub3_reg[14]              DFFRHQXL        slow            69.854401 n
+sub3_reg[15]              DFFRHQXL        slow            69.854401 n
+sub3_reg[16]              DFFRHQXL        slow            69.854401 n
+sub3_reg[17]              DFFRHQXL        slow            69.854401 n
+sub3_reg[18]              DFFRHQXL        slow            69.854401 n
+sub_45                    cic_filter_DW01_sub_2           1413.720011
+                                                                    BO, h
+sub_46                    cic_filter_DW01_sub_1           1413.720011
+                                                                    BO, h
+sub_47                    cic_filter_DW01_sub_0           1413.720011
+                                                                    BO, h
+sum1_reg[0]               DFFRHQX1        slow            69.854401 n
+sum1_reg[1]               DFFRHQX1        slow            69.854401 n
+sum1_reg[2]               DFFRHQX1        slow            69.854401 n
+sum1_reg[3]               DFFRHQX1        slow            69.854401 n
+sum1_reg[4]               DFFRHQX1        slow            69.854401 n
+sum1_reg[5]               DFFRHQX1        slow            69.854401 n
+sum1_reg[6]               DFFRHQX1        slow            69.854401 n
+sum1_reg[7]               DFFRHQX1        slow            69.854401 n
+sum1_reg[8]               DFFRHQX1        slow            69.854401 n
+sum1_reg[9]               DFFRHQX1        slow            69.854401 n
+sum1_reg[10]              DFFRHQX1        slow            69.854401 n
+sum1_reg[11]              DFFRHQX1        slow            69.854401 n
+sum1_reg[12]              DFFRHQX1        slow            69.854401 n
+sum1_reg[13]              DFFRHQX1        slow            69.854401 n
+sum1_reg[14]              DFFRHQX1        slow            69.854401 n
+sum1_reg[15]              DFFRHQX1        slow            69.854401 n
+sum1_reg[16]              DFFRHQX1        slow            69.854401 n
+sum1_reg[17]              DFFRHQX1        slow            69.854401 n
+sum1_reg[18]              DFFRHQX1        slow            69.854401 n
+sum2_reg[0]               DFFRHQX1        slow            69.854401 n
+sum2_reg[1]               DFFRHQX1        slow            69.854401 n
+sum2_reg[2]               DFFRHQX1        slow            69.854401 n
+sum2_reg[3]               DFFRHQX1        slow            69.854401 n
+sum2_reg[4]               DFFRHQX1        slow            69.854401 n
+sum2_reg[5]               DFFRHQX1        slow            69.854401 n
+sum2_reg[6]               DFFRHQX1        slow            69.854401 n
+sum2_reg[7]               DFFRHQX1        slow            69.854401 n
+sum2_reg[8]               DFFRHQX1        slow            69.854401 n
+sum2_reg[9]               DFFRHQX1        slow            69.854401 n
+sum2_reg[10]              DFFRHQX1        slow            69.854401 n
+sum2_reg[11]              DFFRHQX1        slow            69.854401 n
+sum2_reg[12]              DFFRHQX1        slow            69.854401 n
+sum2_reg[13]              DFFRHQX1        slow            69.854401 n
+sum2_reg[14]              DFFRHQX1        slow            69.854401 n
+sum2_reg[15]              DFFRHQX1        slow            69.854401 n
+sum2_reg[16]              DFFRHQX1        slow            69.854401 n
+sum2_reg[17]              DFFRHQX1        slow            69.854401 n
+sum2_reg[18]              DFFRHQX1        slow            69.854401 n
+sum3_reg[0]               DFFRHQX1        slow            69.854401 n
+sum3_reg[1]               DFFRHQX1        slow            69.854401 n
+sum3_reg[2]               DFFRHQX1        slow            69.854401 n
+sum3_reg[3]               DFFRHQX1        slow            69.854401 n
+sum3_reg[4]               DFFRHQX1        slow            69.854401 n
+sum3_reg[5]               DFFRHQX1        slow            69.854401 n
+sum3_reg[6]               DFFRHQX1        slow            69.854401 n
+sum3_reg[7]               DFFRHQX1        slow            69.854401 n
+sum3_reg[8]               DFFRHQX1        slow            69.854401 n
+sum3_reg[9]               DFFRHQX1        slow            69.854401 n
+sum3_reg[10]              DFFRHQX1        slow            69.854401 n
+sum3_reg[11]              DFFRHQX1        slow            69.854401 n
+sum3_reg[12]              DFFRHQX1        slow            69.854401 n
+sum3_reg[13]              DFFRHQX1        slow            69.854401 n
+sum3_reg[14]              DFFRHQX1        slow            69.854401 n
+sum3_reg[15]              DFFRHQX1        slow            69.854401 n
+sum3_reg[16]              DFFRHQX1        slow            69.854401 n
+sum3_reg[17]              DFFRHQX1        slow            69.854401 n
+sum3_reg[18]              DFFRHQX1        slow            69.854401 n
+--------------------------------------------------------------------------------
+Total 252 cells                                           21894.364983
+1

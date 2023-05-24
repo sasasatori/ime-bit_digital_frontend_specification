@@ -1,0 +1,62 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1920 526 202 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/sasasatori/experiment/vcs/tb_cic_filter.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 10100505.000000
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 3
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+activeDirFile "" "/home/sasasatori/experiment/vcs/tb_cic_filter.fsdb"
+allDtoA "DtoA_out[18:0]" 0.000000 1.000000 0.500000 0.500000 /testbench/out[18:0] -UNSIGNED 
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/sasasatori/experiment/vcs/tb_cic_filter.fsdb"
+addSignal -h 15 /testbench/clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope out[18:0]
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 /testbench/DtoA_out[18:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

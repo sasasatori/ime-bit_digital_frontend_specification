@@ -1,0 +1,14 @@
+conducting_layers
+METAL6  metal6
+METAL5  metal5
+METAL4  metal4
+METAL3  metal3
+METAL2  metal2
+METAL1  metal1
+POLY1  poly
+via_layers
+VIA12  via1
+VIA23  via2
+VIA34  via3
+VIA45  via4
+VIA56  via5

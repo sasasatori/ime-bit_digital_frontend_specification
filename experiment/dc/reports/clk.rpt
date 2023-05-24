@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : clocks
+Design : cic_filter
+Version: O-2018.06-SP1
+Date   : Tue May  2 16:04:00 2023
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk            156.00   {0 78}                        {clk}
+clk_div       9984.00   {0 4992}            G         {div/clk_div}
+--------------------------------------------------------------------------------
+
+Generated     Master         Generated      Master         Waveform
+Clock         Source         Source         Clock          Modification
+--------------------------------------------------------------------------------
+clk_div       clk            {div/clk_div}  clk            divide_by(64)
+--------------------------------------------------------------------------------
+1

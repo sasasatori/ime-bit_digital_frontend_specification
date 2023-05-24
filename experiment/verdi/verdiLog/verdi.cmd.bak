@@ -1,0 +1,95 @@
+debImport "-f" "../vcs/file_list.f"
+debLoadSimResult /home/sasasatori/experiment/vcs/tb_cic_filter.fsdb
+wvCreateWindow
+srcHBSelect "testbench" -win $_nTrace1
+srcSetScope -win $_nTrace1 "testbench" -delim "."
+srcHBSelect "testbench" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out" -line 7 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvExpandBus -win $_nWave2 {("G1" 1)}
+wvScrollUp -win $_nWave2 3
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvCollapseBus -win $_nWave2 {("G1" 1)}
+wvSetPosition -win $_nWave2 {("G1" 1)}
+srcHBSelect "testbench.cic" -win $_nTrace1
+srcSetScope -win $_nTrace1 "testbench.cic" -delim "."
+srcHBSelect "testbench.cic" -win $_nTrace1
+srcHBSelect "testbench.cic" -win $_nTrace1
+srcHBAddObjectToWave -clipboard
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1/cic" 4)}
+wvSelectGroup -win $_nWave2 {G1/cic}
+wvSelectSignal -win $_nWave2 {( "G1/cic" 1 )} 
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sum3_nxt" -line 860 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1/cic" 5 )} 
+wvExpandBus -win $_nWave2 {("G1/cic" 5)}
+wvSelectSignal -win $_nWave2 {( "G1/cic" 5 )} 
+wvSetPosition -win $_nWave2 {("G1/cic" 5)}
+wvCollapseBus -win $_nWave2 {("G1/cic" 5)}
+wvSetPosition -win $_nWave2 {("G1/cic" 5)}
+wvScrollDown -win $_nWave2 0
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1/cic" 4)}
+wvSelectSignal -win $_nWave2 {( "G1/cic" 1 )} 
+wvZoom -win $_nWave2 16761747.695144 126023510.448679
+wvZoom -win $_nWave2 34625072.152694 41609229.083467
+debReload
+wvZoomAll -win $_nWave2
+wvSelectGroup -win $_nWave2 {G1/cic}
+wvSelectSignal -win $_nWave2 {( "G1/cic" 1 )} 
+wvDigitalToAnalog -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1/cic" 5 )} 
+wvSelectSignal -win $_nWave2 {( "G1/cic" 1 )} 
+wvSelectSignal -win $_nWave2 {( "G1/cic" 5 )} 
+debReload
+wvSetCursor -win $_nWave2 6599162148.125384 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 2681879631.223110 -snap {("G2" 0)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sum1" -line 852 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvZoom -win $_nWave2 0.000000 329026899.200983
+wvZoom -win $_nWave2 0.000000 15773877.158990
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sum2" -line 854 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sum3_nxt" -line 860 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1/cic" 5 )} 
+wvSelectSignal -win $_nWave2 {( "G1/cic" 6 )} 
+wvSetCursor -win $_nWave2 7600934.045881 -snap {("cic" 5)}
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 49664437.615243 974664588.199140
+wvZoom -win $_nWave2 49664437.615240 192365751.565184
+debReload
+wvZoomAll -win $_nWave2
+wvSetCursor -win $_nWave2 2775000451.751690 -snap {("cic" 8)}
+wvZoom -win $_nWave2 3451678414.259373 4662249081.130916
+wvZoomAll -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1/cic" 6 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1/cic" 7)}
+wvSelectSignal -win $_nWave2 {( "G1/cic" 6 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1/cic" 6)}
+wvSelectSignal -win $_nWave2 {( "G1/cic" 6 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1/cic" 5)}
+debExit

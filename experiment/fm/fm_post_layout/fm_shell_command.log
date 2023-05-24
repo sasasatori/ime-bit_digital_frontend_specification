@@ -1,0 +1,73 @@
+#@ # 
+#@ # Running fm_shell Version L-2016.03-SP1 for linux64 -- Apr 13, 2016
+#@ # Date:   Thu Jul 22 12:56:50 2021
+#@ # Run by: crazy@crazy_one
+#@ 
+
+source /opt/synopsys/fm_2016/admin/setup/.synopsys_fm.setup
+#@ # -- Starting source /opt/synopsys/fm_2016/admin/setup/.synopsys_fm.setup
+
+#@ #
+#@ # .synopsys_fm.setup: Initialization File for Formality
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparc" || $sh_arch == "sparcOS5" ||      $sh_arch == "hp700" || $sh_arch == "hpux10" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ 
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ # -- End source /opt/synopsys/fm_2016/admin/setup/.synopsys_fm.setup
+
+source -echo -verbose fm_post_layout.tcl
+#@ # -- Starting source fm_post_layout.tcl
+
+#@ 
+#@ create_container ref
+#@ read_verilog -netlist  "../../dc/outputs/cic_filter_post_dc.v"  
+#@ read_db "../../lib/logic/slow.db"
+#@ 
+#@ set_top cic_filter
+#@ set_reference_design ref:/WORK/cic_filter
+#@ 
+#@ 
+#@ read_verilog -c impl -netlist "../../icc/outputs/cic_filter_post_layout.v"
+#@ read_db "../../lib/logic/slow.db"
+#@ 
+#@ set_top cic_filter
+#@ 
+#@ set_implementation_design impl:/WORK/cic_filter
+#@ 
+#@ current_design $impl
+#@ 
+#@ verify
+#@ # -- End source fm_post_layout.tcl
+

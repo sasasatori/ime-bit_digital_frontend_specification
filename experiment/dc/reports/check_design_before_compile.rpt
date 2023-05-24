@@ -1,0 +1,17 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Tue May  2 16:03:54 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+--------------------------------------------------------------------------------
+
+Warning: In design 'cic_filter', cell 'B_1' does not drive any nets. (LINT-1)
+Warning: In design 'divider', cell 'C43' does not drive any nets. (LINT-1)
+Warning: In design 'divider', cell 'C44' does not drive any nets. (LINT-1)
+1

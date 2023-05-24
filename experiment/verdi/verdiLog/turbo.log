@@ -1,0 +1,3 @@
+Command Line: /tools/Synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -f ../vcs/file_list.f -ssf ../vcs/tb_cic_filter.fsdb
+uname(Linux sasasatori-System-Product-Name 5.15.0-71-generic #78~20.04.1-Ubuntu SMP Wed Apr 19 11:26:48 UTC 2023 x86_64)
+au time 1662.054951 15.214608 15.801828 delta 387366912 387366912 total 761028608 761028608

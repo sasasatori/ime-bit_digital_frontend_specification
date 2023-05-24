@@ -1,0 +1,195 @@
+0 
+36
++cli+1
++itf+/tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/vcsdp.tab
++memcbk
++v2k
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -fPIE -O -I/tools/Synopsys/vcs/O-2018.09-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -no-pie -Wl,--no-as-needed -rdynamic
+-Mobjects= /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libvirsim.so /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
+-Mout=cic_filter
+-Msaverestoreobj=/tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/tools/Synopsys/verdi/Verdi_O-2018.09-SP2//share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/tools/Synopsys/vcs/O-2018.09-SP2/include
+-P
+-Xcbug=0x1
+-debug=1
+-f file_list.f
+-fsdb
+-full64
+-gen_obj
+-l
+-o cic_filter
+-picarchive
+-timescale=1ns/1ns
+/tools/Synopsys/vcs/O-2018.09-SP2/linux64/bin/vcs1
+/tools/Synopsys/verdi/Verdi_O-2018.09-SP2//share/PLI/VCS/LINUX64/verdi.tab
+compile.log
+141
+sysc_uni_pwd=/home/sasasatori/experiment/vcs
+icc=icc_shell
+XMODIFIERS=@im=fcitx
+XKEYSYMDB=/tools/Cadence/IC617/tools/plot/etc/XKeysymDB
+XILINX_VIVADO=/tools/Xilinx/Vivado/2019.1
+XDG_VTNR=1
+XDG_SESSION_TYPE=x11
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1
+XDG_SESSION_ID=3
+XDG_SESSION_DESKTOP=KDE
+XDG_SESSION_CLASS=user
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/opt/apps/com.qq.office.deepin/entries:/opt/apps/com.qq.weixin.deepin/entries
+XDG_CURRENT_DESKTOP=KDE
+XDG_CONFIG_DIRS=/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings
+XCURSOR_THEME=breeze_cursors
+XAUTHORITY=/home/sasasatori/.Xauthority
+VRST_HOME=/tools/Cadence/INCISIVE152
+VMR_MODE_FLAG=64
+VERDI_HOME=/tools/Synopsys/verdi/Verdi_O-2018.09-SP2/
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=compile.log
+VCS_HOME=/tools/Synopsys/vcs/O-2018.09-SP2/
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TSMC_ASU_DFM_PATH=/opt/PDKs/tsmc/CRNxxG/Assura/lvs_rcx/DFM
+TOOL_HOME=/tools/Synopsys/vcs/O-2018.09-SP2/linux64
+SynopsysList=/tools/Synopsys
+SYSTEM_CDS_LIB_DIR=/tools/Cadence/IC617/share/cdssetup
+SYNOPSYS=/tools/Synopsys/syn/O-2018.06-SP1
+STARRC_HOME=/tools/Synopsys/starrc/O-2018.06-SP1/
+SSH_AUTH_SOCK=/tmp/ssh-PDZzoK2O3dgg/agent.1455
+SSH_AGENT_PID=1514
+SPYGLASS_HOME=/tools/Synopsys/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME
+SPECMAN_PATH=/tools/Cadence/IC617/tools/dfII/bin:/tools/Cadence/IC617/tools.lnx86/iccraft/bin:/tools/Cadence/IC617/tools.lnx86/plot/bin:/tools/Cadence/IC617/tools.lnx86/dracula/bin:/tools/Cadence/IC617/tools.lnx86/dfII/bin:/tools/Cadence/IC617/tools.lnx86/bin:/tools/Xilinx/SDK/2019.1/bin:/tools/Xilinx/SDK/2019.1/gnu/microblaze/lin/bin:/tools/Xilinx/SDK/2019.1/gnu/arm/lin/bin:/tools/Xilinx/SDK/2019.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/SDK/2019.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/SDK/2019.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/SDK/2019.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/SDK/2019.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vivado/2019.1/bin:/tools/Xilinx/DocNav:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/tools/Synopsys/vcs/O-2018.09-SP2//gui/dve/bin:/tools/Synopsys/vcs/O-2018.09-SP2//bin:/tools/Synopsys/verdi/Verdi_O-2018.09-SP2//bin:/tools/Synopsys/scl/2018.06/linux64/bin/:/tools/Synopsys/syn/O-2018.06-SP1//bin:/tools/Synopsys/pts/O-2018.06-SP1//bin:/tools/Synopsys/fm/O-2018.06-SP1//bin:/tools/Synopsys/icc/O-2018.06-SP1//bin:/tools/Synopsys/icc2/O-2018.06-SP1//bin:/tools/Synopsys/starrc/O-2018.06-SP1//bin:/tools/Synopsys/lc/O-2018.06-SP1//bin:/tools/Synopsys/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/bin:/tools/Cadence/IC617/tools/dfII/bin:/tools/Cadence/IC617/tools/plot/bin:/tools/Cadence/SPECTRE181/bin:/tools/Cadence/SPECTRE181/tools/relxpert/bin:/tools/Cadence/EXT151/bin:/tools/Cadence/PVS151/bin:/tools/Cadence/PVS151/tools/bin:/tools/Cadence/PVS151/tools/K2/MaskCompose/bin:/tools/Cadence/GENUS152/tools/bin:/tools/Cadence/INNOVUS152/bin:/tools/Cadence/ET151/bin:/tools/Cadence/VIPCAT113/utils:/tools/Cadence/VIPCAT113/packages:/tools/Cadence/VIPCAT113/vips/enet/vr_enet
+SPECMAN_HOME=/tools/Cadence/INCISIVE152/components/sn
+SPECMAN_DIR=/tools/Cadence/INCISIVE152/components/sn/
+SNPS_VCS_INTERNAL_UBUNTU_PRE_LDFLAGS= -no-pie 
+SHELL_SESSION_ID=bc31b77088044100bd7a0418fda30dc3
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_SCREEN_SCALE_FACTORS=DVI-D-0=1;HDMI-0=1;DP-0=1;DP-1=1;
+QT_SCALE_FACTOR_ROUNDING_POLICY=PassThrough
+QT_IM_MODULE=fcitx
+QT_AUTO_SCREEN_SCALE_FACTOR=0
+QT_ACCESSIBILITY=1
+QT4_IM_MODULE=fcitx
+QRC_MOS_LW_PRECISION=Y
+QRC_HOME=/tools/Cadence/EXT151
+PT_HOME=/tools/Synopsys/pts/O-2018.06-SP1/
+PROFILEHOME=/home/sasasatori/experiment/prj
+PAM_KWALLET5_LOGIN=/run/user/1000/kwallet5.socket
+OVA_UUM=0
+OA_UNSUPPORTED_PLAT=linux_rhel50_gcc48x
+MOZILLA_HOME=/usr/bin/firefox
+MMSIMHOME=/tools/Cadence/SPECTRE181
+MGLS_LICENSE_FILE=/tools/Mentor/license/license.dat
+MGC_PDF_READER=evince
+MGC_LIB_PATH=/tools/Mentor/Calibre2019/aoj_cal_2019.3_15.11/lib
+MGC_HOME=/tools/Mentor
+MGC_CALIBRE_SCHEMATIC_SERVER=sasasatori-System-Product-Name:9199
+MGC_CALIBRE_SAVE_ALL_RUNSET_VALUES=1
+MGC_CALIBRE_REALTIME_VIRTUOSO_ENABLED=1
+MGC_CALIBRE_LAYOUT_SERVER=sasasatori-System-Product-Name:9189
+MFLAGS=
+MANAGERPID=1443
+MAKE_TERMOUT=/dev/pts/3
+MAKE_TERMERR=/dev/pts/3
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_LICENSE_FILE=/tools/Cadence/IC617/share/license/license.dat
+LC_HOME=/tools/Synopsys/lc/O-2018.06-SP1/
+LC_ALL=zh_CN.utf-8
+KONSOLE_VERSION=191203
+KONSOLE_DBUS_WINDOW=/Windows/1
+KONSOLE_DBUS_SESSION=/Sessions/1
+KONSOLE_DBUS_SERVICE=:1.1739
+KDE_SESSION_VERSION=5
+KDE_SESSION_UID=1000
+KDE_FULL_SESSION=true
+K2_VIEWER_HOME=/tools/Cadence/PVS151/tools/K2/Viewer
+K2_MC_DATA=/home/sasasatori/Projects
+K2_MASKCOMPOSE_HOME=/tools/Cadence/PVS151/tools/K2/MaskCompose
+K2_HOME=/tools/Cadence/PVS151/tools/K2
+JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+JOURNAL_STREAM=8:41137
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+INVOCATION_ID=d8a6f92badaa427aab9ee24e039b43df
+INCISIVDIR=/tools/Cadence/INCISIVE152
+IM_CONFIG_PHASE=1
+ICC_HOME=/tools/Synopsys/icc/O-2018.06-SP1/
+ICC2_HOME=/tools/Synopsys/icc2/O-2018.06-SP1/
+GTK_IM_MODULE=fcitx
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+FM_HOME=/tools/Synopsys/fm/O-2018.06-SP1/
+D_DISABLE_RT_SCREEN_SCALE=1
+DVE_HOME=/tools/Synopsys/vcs/O-2018.09-SP2/gui/dve/
+DESKTOP_SESSION=plasma
+DENALI=/tools/Cadence/VIPCAT113/tools/denali_64bit
+DC_HOME=/tools/Synopsys/syn/O-2018.06-SP1/
+DBUS_STARTER_BUS_TYPE=session
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=f113a29480dfc0547fdd782f644b99a3
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=f113a29480dfc0547fdd782f644b99a3
+CUDA_HOME=/usr/local/cuda-12.0
+CONDA_SHLVL=1
+CONDA_PYTHON_EXE=/home/sasasatori/anaconda3/bin/python
+CONDA_PROMPT_MODIFIER=
+CONDA_PREFIX=/home/sasasatori/anaconda3
+CONDA_EXE=/home/sasasatori/anaconda3/bin/conda
+CONDA_DEFAULT_ENV=base
+COLORTERM=truecolor
+COLORFGBG=0;15
+CLUTTER_IM_MODULE=fcitx
+CLASSPATH=/usr/lib/jvm/java-8-openjdk-amd64/lib:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib:
+CDS_ROOT=/tools/Cadence/IC617
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CWD
+CDS_LIC_ONLY=1
+CDS_LIC_FILE=/tools/Cadence/IC617/share/license/license.dat
+CDS_INST_DIR=/tools/Cadence/IC617
+CDS_ENABLE_VMS=1
+CDS_AUTO_64BIT=ALL
+CDSROOT=/tools/Cadence/IC617
+CDSHOME=/tools/Cadence/IC617
+CDSDIR=/tools/Cadence/IC617
+CDS=/tools/Cadence/IC617
+CDN_VIP_ROOT=/tools/Cadence/VIPCAT113
+CDK_DIR=/opt/PDKs/ncsu-cdk-1.6.0.beta
+CALIBRE_OS_MSG_LEVEL=1
+CALIBRE_HOME=/tools/Mentor/Calibre2019/aoj_cal_2019.3_15.11
+CADHOME=/tools/Cadence
+CADENCE_VIP_LIC_ORDER=newrev:soc:portfolio:alacarte
+CADENCE_DIR=/tools/Cadence/IC617
+ABVIP_ISNT_DIR=/tools/Cadence/VIPCAT113/tools/abvip
+0
+6
+1683017361 ../tb/tb_cic_filter.v
+1626984563 ../src/divider64.v
+1683013711 ../src/cic_filter.v
+1683019087 file_list.f
+1551421246 /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/vcsdp.tab
+1550753332 /tools/Synopsys/verdi/Verdi_O-2018.09-SP2//share/PLI/VCS/LINUX64/verdi.tab
+4
+1551422344 /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libvirsim.so
+1551421792 /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so
+1551421768 /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so
+1551421789 /tools/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
+1683019101 cic_filter.daidir
+-1 partitionlib

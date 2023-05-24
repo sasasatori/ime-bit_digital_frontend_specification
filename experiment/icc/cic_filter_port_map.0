@@ -1,0 +1,4 @@
+guide_constraints -body { div } -equivalent { div/rst_n    div/IN0 }
+
+#-------------------------------------------------------------------
+

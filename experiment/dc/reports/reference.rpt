@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : reference
+Design : cic_filter
+Version: O-2018.06-SP1
+Date   : Tue May  2 16:04:00 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow          13.305600      18    239.500803  
+CLKBUFX8           slow          23.284800      19    442.411192  
+DFFRHQX1           slow          69.854401      57   3981.700836  n
+DFFRHQXL           slow          69.854401     133   9290.635284  n
+XOR2X1             slow          26.611200      19    505.612806  
+cic_filter_DW01_add_0          1287.316810       1   1287.316810  h
+cic_filter_DW01_add_1          1287.316810       1   1287.316810  h
+cic_filter_DW01_sub_0          1413.720011       1   1413.720011  h
+cic_filter_DW01_sub_1          1413.720011       1   1413.720011  h
+cic_filter_DW01_sub_2          1413.720011       1   1413.720011  h
+divider                         618.710408       1    618.710408  h, n
+-----------------------------------------------------------------------------
+Total 11 references                                 21894.364983
+1
