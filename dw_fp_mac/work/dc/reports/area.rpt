@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : dw_fp_mac
+Version: O-2018.06-SP1
+Date   : Tue Sep 26 16:23:19 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/sasasatori/synopsys_workplace/dw_fp_mac/lib/logic/slow.db)
+
+Number of ports:                          139
+Number of nets:                          6454
+Number of cells:                         5933
+Number of combinational cells:           5931
+Number of sequential cells:                 2
+Number of macros/black boxes:               0
+Number of buf/inv:                       1021
+Number of references:                     138
+
+Combinational area:             141870.961663
+Buf/Inv area:                    12164.644967
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:          630096.463257
+
+Total cell area:                141870.961663
+Total area:                     771967.424920
+1

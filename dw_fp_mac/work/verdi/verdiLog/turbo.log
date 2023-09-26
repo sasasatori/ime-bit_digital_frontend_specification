@@ -1,0 +1,3 @@
+Command Line: /tools/Synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -sv -f ../../prj/filelist.f -ssf ../vcs/tb_dw_fp_mac.fsdb
+uname(Linux sasasatori-System-Product-Name 5.15.0-83-generic #92~20.04.1-Ubuntu SMP Mon Aug 21 14:00:49 UTC 2023 x86_64)
+au time 76.061668 3.958769 1.170266 delta 359862272 359862272 total 733523968 733523968

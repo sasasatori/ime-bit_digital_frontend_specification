@@ -1,0 +1,28 @@
+debImport "-sv" "-f" "../../prj/filelist.f"
+debLoadSimResult \
+           /home/sasasatori/synopsys_workplace/dw_fp_mac/work/vcs/tb_dw_fp_mac.fsdb
+wvCreateWindow
+srcHBSelect "dw_fp_mac" -win $_nTrace1
+srcHBSelect "dw_fp_mac.U1" -win $_nTrace1
+srcSetScope -win $_nTrace1 "dw_fp_mac.U1" -delim "."
+srcHBSelect "dw_fp_mac.U1" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "inst_exp_width" -line 12 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "inst_sig_width" -line 12 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "inst_sig_width" -line 12 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "status_inst" -line 10 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "inst_a" -line 5 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "inst_b" -line 6 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "inst_a" -line 5 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+debExit

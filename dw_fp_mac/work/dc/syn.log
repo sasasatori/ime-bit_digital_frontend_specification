@@ -1,0 +1,1095 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version O-2018.06-SP1 for linux64 - Jul 19, 2018 
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/sasasatori/.synopsys_dv_prefs.tcl
+# specify libraries
+source ./scripts/dc_setup.tcl
+1
+# read design
+source ./scripts/dc_read_design.tcl
+Running PRESTO HDLC
+Compiling source file ../../src/rtl/dw_fp_mac.sv
+Presto compilation completed successfully.
+Loading db file '/home/sasasatori/synopsys_workplace/dw_fp_mac/lib/logic/slow.db'
+Loading db file '/tools/Synopsys/syn/O-2018.06-SP1/libraries/syn/dw_foundation.sldb'
+Loading db file '/tools/Synopsys/syn/O-2018.06-SP1/libraries/syn/gtech.db'
+Loading db file '/tools/Synopsys/syn/O-2018.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'dw_fp_mac'.
+Current design is 'dw_fp_mac'.
+
+  Linking design 'dw_fp_mac'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  dw_fp_mac                   /home/sasasatori/synopsys_workplace/dw_fp_mac/work/dc/dw_fp_mac.db
+  slow (library)              /home/sasasatori/synopsys_workplace/dw_fp_mac/lib/logic/slow.db
+  dw_foundation.sldb (library) /tools/Synopsys/syn/O-2018.06-SP1/libraries/syn/dw_foundation.sldb
+
+1
+# define design environment
+source ./scripts/dc_set_env.tcl
+Using operating conditions 'slow' found in library 'slow'.
+1
+# set design constraints
+source ./scripts/dc_set_cons.tcl
+
+Reading SDC version 2.1...
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+Current design is 'dw_fp_mac'.
+Current design is 'dw_fp_mac'.
+Current design is 'dw_fp_mac'.
+1
+# synthesis and optimize design
+source ./scripts/dc_syn.tcl
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.1 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.1 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'dw_fp_mac'
+
+Loaded alib file './alib-52/slow.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'dw_fp_mac'
+ Implement Synthetic for 'dw_fp_mac'.
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_mult' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_mult' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_addsub' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_fp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+  Processing 'dw_fp_mac_DW_fp_mac_J1_0'
+  Processing 'dw_fp_mac_DW_lzd_J1_0'
+Memory usage for J1 task 245 Mbytes -- main task 245 Mbytes.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_mult' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_mult' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_addsub' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_fp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+  Building model 'DW_fp_ifp_conv_sig_widthi23_exp_widthi8_sig_widtho25_exp_widtho8_use_denormal0_use_1scmpl0' (rtl)
+  Building model 'DW_fp_ifp_conv_sig_widthi23_exp_widthi8_sig_widtho25_exp_widtho8_use_denormal0_use_1scmpl0' (rtl)
+  Building model 'DW_fp_ifp_conv_sig_widthi23_exp_widthi8_sig_widtho25_exp_widtho8_use_denormal0_use_1scmpl0' (rtl)
+  Building model 'DW_fp_ifp_conv_sig_widthi23_exp_widthi8_sig_widtho25_exp_widtho8_use_denormal0_use_1scmpl0' (rtl)
+  Building model 'DW_ifp_mult_sig_widthi25_exp_widthi8_sig_widtho31_exp_widtho9' (rtl)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U131, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U132, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U144, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U160, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U174, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U186, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U202, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U216, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U232, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U244, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U260, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U272, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U288, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U298, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U314, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U328, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U344, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U356, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U372, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U384, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U400, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U410, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U426, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U436, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U450, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U460, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U476, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U486, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U498, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U506, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U520, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U534, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U550, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U562, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U578, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U590, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U606, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U616, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U632, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U642, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U656, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U666, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U692, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U704, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U712, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U725, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U733, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U745, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U753, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U767, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U775, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U785, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U791, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U802, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U808, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U816, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U824, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U833, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U839, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U846, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U2682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U2682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U846, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U839, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U833, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U824, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U816, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U808, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U802, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U791, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U785, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U775, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U767, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U753, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U745, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U733, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U725, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U712, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U704, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U692, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U666, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U656, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U642, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U632, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U616, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U606, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U590, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U578, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U562, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U550, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U534, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U520, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U506, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U498, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U486, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U476, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U460, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U450, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U436, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U426, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U410, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U400, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U384, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U372, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U356, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U344, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U328, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U314, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U298, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U288, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U272, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U260, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U244, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U232, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U216, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U202, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U186, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U174, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U160, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U144, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U132, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U131, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U131, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U132, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U144, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U160, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U174, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U186, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U202, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U216, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U232, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U244, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U260, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U272, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U288, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U298, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U314, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U328, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U344, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U356, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U372, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U384, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U400, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U410, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U426, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U436, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U450, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U460, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U476, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U486, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U498, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U506, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U520, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U534, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U550, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U562, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U578, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U590, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U606, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U616, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U632, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U642, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U656, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U666, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U692, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U704, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U712, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U725, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U733, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U745, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U753, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U767, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U775, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U785, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U791, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U802, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U808, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U816, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U824, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U833, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U839, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U846, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U2682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U2682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U846, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U839, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U833, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U824, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U816, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U808, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U802, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U791, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U785, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U775, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U767, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U753, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U745, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U733, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U725, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U712, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U704, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U692, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U666, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U656, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U642, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U632, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U616, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U606, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U590, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U578, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U562, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U550, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U534, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U520, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U506, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U498, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U486, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U476, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U460, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U450, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U436, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U426, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U410, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U400, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U384, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U372, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U356, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U344, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U328, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U314, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U298, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U288, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U272, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U260, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U244, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U232, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U216, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U202, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U186, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U174, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U160, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U144, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U132, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U131, because it is not driving any load. (OPT-112)
+  Building model 'DW_ifp_mult_sig_widthi25_exp_widthi8_sig_widtho31_exp_widtho9' (rtl)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U131, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U132, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U144, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U160, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U174, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U186, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U202, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U216, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U232, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U244, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U260, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U272, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U288, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U298, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U314, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U328, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U344, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U356, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U372, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U384, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U400, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U410, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U426, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U436, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U450, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U460, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U476, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U486, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U498, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U506, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U520, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U534, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U550, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U562, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U578, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U590, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U606, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U616, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U632, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U642, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U656, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U666, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U692, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U704, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U712, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U725, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U733, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U745, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U753, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U767, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U775, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U785, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U791, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U802, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U808, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U816, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U824, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U833, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U839, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U846, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U2682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U2682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U846, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U839, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U833, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U824, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U816, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U808, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U802, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U791, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U785, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U775, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U767, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U753, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U745, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U733, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U725, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U712, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U704, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U692, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U666, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U656, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U642, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U632, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U616, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U606, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U590, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U578, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U562, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U550, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U534, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U520, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U506, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U498, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U486, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U476, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U460, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U450, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U436, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U426, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U410, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U400, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U384, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U372, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U356, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U344, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U328, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U314, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U298, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U288, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U272, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U260, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U244, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U232, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U216, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U202, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U186, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U174, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U160, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U144, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U132, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U131, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U131, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U132, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U144, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U160, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U174, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U186, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U202, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U216, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U232, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U244, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U260, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U272, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U288, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U298, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U314, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U328, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U344, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U356, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U372, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U384, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U400, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U410, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U426, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U436, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U450, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U460, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U476, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U486, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U498, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U506, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U520, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U534, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U550, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U562, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U578, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U590, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U606, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U616, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U632, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U642, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U656, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U666, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U692, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U704, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U712, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U725, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U733, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U745, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U753, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U767, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U775, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U785, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U791, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U802, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U808, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U816, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U824, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U833, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U839, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U846, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U2682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U2682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U846, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U839, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U833, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U824, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U816, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U808, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U802, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U791, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U785, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U775, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U767, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U753, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U745, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U733, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U725, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U712, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U704, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U692, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U682, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U666, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U656, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U642, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U632, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U616, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U606, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U590, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U578, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U562, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U550, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U534, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U520, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U506, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U498, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U486, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U476, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U460, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U450, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U436, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U426, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U410, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U400, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U384, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U372, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U356, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U344, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U328, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U314, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U298, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U288, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U272, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U260, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U244, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U232, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U216, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U202, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U186, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U174, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U160, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U144, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U132, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell mult_x_6/U131, because it is not driving any load. (OPT-112)
+  Building model 'DW_ifp_addsub_sig_widthi31_exp_widthi9_sig_widtho32_exp_widtho10_use_denormal0_use_1scmpl0' (rtl)
+Warning: Removing don't touch or size only GTECH cell lt_x_3/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_3/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_3/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_3/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_3/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_3/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_3/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_3/U2, because it is not driving any load. (OPT-112)
+  Building model 'DW_lzd_a_width33' (cla)
+  Building model 'DW_ifp_fp_conv_sig_widthi32_exp_widthi10_sig_width23_exp_width8_use_denormal0' (rtl)
+Warning: Removing don't touch or size only GTECH cell gt_x_8/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell gt_x_8/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_18/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_18/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell gt_x_8/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell gt_x_8/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_18/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_18/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell gt_x_8/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell gt_x_8/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_18/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_18/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell gt_x_8/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell gt_x_8/U2, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_18/U1, because it is not driving any load. (OPT-112)
+Warning: Removing don't touch or size only GTECH cell lt_x_18/U2, because it is not driving any load. (OPT-112)
+  Structuring 'dw_fp_mac_DW_fp_mac_0'
+  Mapping 'dw_fp_mac_DW_fp_mac_0'
+  Mapping 'dw_fp_mac_DW_mult_uns_0'
+  Mapping 'dw_fp_mac_DW01_add_0'
+  Mapping 'dw_fp_mac_DW01_sub_0'
+  Mapping 'dw_fp_mac_DW01_add_1'
+  Mapping 'dw_fp_mac_DW01_add_2'
+  Mapping 'dw_fp_mac_DW_cmp_0'
+  Structuring 'dw_fp_mac_DW_fp_ifp_conv_0'
+  Mapping 'dw_fp_mac_DW_fp_ifp_conv_0'
+  Mapping 'dw_fp_mac_DW01_sub_1'
+  Structuring 'dw_fp_mac_DW_fp_ifp_conv_1'
+  Mapping 'dw_fp_mac_DW_fp_ifp_conv_1'
+  Mapping 'dw_fp_mac_DW01_sub_2'
+  Structuring 'dw_fp_mac_DW_fp_ifp_conv_2'
+  Mapping 'dw_fp_mac_DW_fp_ifp_conv_2'
+  Mapping 'dw_fp_mac_DW01_sub_3'
+  Structuring 'dw_fp_mac_DW_fp_ifp_conv_3'
+  Mapping 'dw_fp_mac_DW_fp_ifp_conv_3'
+  Mapping 'dw_fp_mac_DW01_sub_4'
+  Structuring 'dw_fp_mac_DW_ifp_mult_0'
+  Mapping 'dw_fp_mac_DW_ifp_mult_0'
+  Mapping 'dw_fp_mac_DW_mult_tc_0'
+  Mapping 'dw_fp_mac_DW01_add_3'
+  Mapping 'dw_fp_mac_DW01_add_4'
+  Structuring 'dw_fp_mac_DW_ifp_mult_1'
+  Mapping 'dw_fp_mac_DW_ifp_mult_1'
+  Mapping 'dw_fp_mac_DW_mult_tc_1'
+  Mapping 'dw_fp_mac_DW01_add_5'
+  Mapping 'dw_fp_mac_DW01_add_6'
+  Structuring 'dw_fp_mac_DW_ifp_addsub_0'
+  Mapping 'dw_fp_mac_DW_ifp_addsub_0'
+  Mapping 'dw_fp_mac_DW01_sub_5'
+  Mapping 'dw_fp_mac_DW_cmp_1'
+  Mapping 'dw_fp_mac_DW01_sub_6'
+  Mapping 'dw_fp_mac_DW01_add_7'
+  Mapping 'dw_fp_mac_DW01_inc_0'
+  Mapping 'dw_fp_mac_DW01_sub_7'
+  Structuring 'dw_fp_mac_DW_ifp_fp_conv_0'
+  Mapping 'dw_fp_mac_DW_ifp_fp_conv_0'
+  Mapping 'dw_fp_mac_DW01_sub_8'
+  Mapping 'dw_fp_mac_DW01_inc_1'
+  Structuring 'dw_fp_mac_DW_lzd_0'
+  Mapping 'dw_fp_mac_DW_lzd_0'
+  Mapping 'dw_fp_mac_DP_OP_54_132_7759_0'
+  Structuring 'dw_fp_mac_DW_lzd_1'
+  Mapping 'dw_fp_mac_DW_lzd_1'
+  Mapping 'dw_fp_mac_DP_OP_102_128_4033_0'
+  Mapping 'dw_fp_mac_DP_OP_103_129_9309_0'
+  Mapping 'dw_fp_mac_DW01_sub_9'
+  Building model 'DW_lzod_a_width53_detect_10' (cla)
+  Building model 'DW_lsd_a_width53'
+  Structuring 'dw_fp_mac_DW_fp_mac_1'
+  Mapping 'dw_fp_mac_DW_fp_mac_1'
+  Mapping 'DW_cmp'
+  Mapping 'dw_fp_mac_DW01_sub_10'
+  Mapping 'DW_cmp'
+  Mapping 'dw_fp_mac_DW01_inc_3'
+  Mapping 'dw_fp_mac_DW01_dec_0'
+  Mapping 'DW_cmp'
+  Mapping 'dw_fp_mac_DW01_add_8'
+  Mapping 'DW_cmp'
+  Mapping 'dw_fp_mac_DW01_inc_4'
+  Mapping 'DW_cmp'
+  Mapping 'DW_cmp'
+  Mapping 'DW_cmp'
+  Mapping 'dw_fp_mac_DW02_multp_0'
+  Structuring 'dw_fp_mac_DW_lsd_0'
+  Mapping 'dw_fp_mac_DW_lsd_0'
+  Structuring 'dw_fp_mac_DW_lzod_0'
+  Mapping 'dw_fp_mac_DW_lzod_0'
+  Mapping 'dw_fp_mac_DP_OP_206_133_9752_0'
+  Mapping 'dw_fp_mac_DP_OP_207_134_9016_0'
+  Mapping 'dw_fp_mac_DP_OP_208_135_5508_0'
+  Mapping 'dw_fp_mac_DP_OP_209_136_153_0'
+  Mapping 'dw_fp_mac_DP_OP_210_137_6827_0'
+  Building model 'DW_lzod_a_width53_detect_10' (rtl)
+  Building model 'DW_lsd_a_width53'
+  Structuring 'dw_fp_mac_DW_fp_mac_2'
+  Mapping 'dw_fp_mac_DW_fp_mac_2'
+  Mapping 'DW_cmp'
+  Mapping 'dw_fp_mac_DW01_sub_11'
+  Mapping 'DW_cmp'
+  Mapping 'DW_rightsh'
+  Mapping 'DW_cmp'
+  Mapping 'DW_leftsh'
+  Mapping 'dw_fp_mac_DW01_add_9'
+  Mapping 'DW_cmp'
+  Mapping 'dw_fp_mac_DW01_inc_5'
+  Mapping 'DW_cmp'
+  Mapping 'DW_cmp'
+  Mapping 'DW_cmp'
+  Mapping 'dw_fp_mac_DW02_multp_1'
+  Structuring 'dw_fp_mac_DW_lsd_1'
+  Mapping 'dw_fp_mac_DW_lsd_1'
+  Structuring 'dw_fp_mac_DW_lzod_1'
+  Mapping 'dw_fp_mac_DW_lzod_1'
+  Mapping 'dw_fp_mac_DP_OP_207_138_9016_0'
+  Mapping 'dw_fp_mac_DP_OP_208_139_5508_0'
+  Mapping 'dw_fp_mac_DP_OP_209_140_153_0'
+  Mapping 'dw_fp_mac_DP_OP_210_141_6827_0'
+  Mapping 'dw_fp_mac_DW_fp_mac_2'
+Information: Added key list 'DesignWare' to design 'dw_fp_mac'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Mapping 'dw_fp_mac_DP_OP_208_139_5508_11'
+  Mapping 'dw_fp_mac_DP_OP_216_143_1798_6'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:22  144096.3      3.34     117.1      36.3                           9363924.0000
+    0:01:32  157358.7      0.26       7.9      32.7                           10812764.0000
+    0:01:32  157358.7      0.26       7.9      32.7                           10812764.0000
+    0:01:32  157358.7      0.26       7.9      32.7                           10812764.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:01:41  153127.5      0.43      12.5      30.5                           10468178.0000
+    0:01:41  154993.6      0.42      12.2      21.8                           10719202.0000
+    0:01:41  154993.6      0.42      12.2      21.8                           10719202.0000
+    0:01:49  162760.8      0.17       4.9      24.9                           11575228.0000
+    0:01:49  162760.8      0.17       4.9      24.9                           11575228.0000
+    0:01:49  163665.5      0.08       2.1      25.6                           11677875.0000
+    0:01:49  163665.5      0.08       2.1      25.6                           11677875.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+
+
+  Beginning Design Rule Fixing  (max_transition)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:57  166892.1      0.00       0.0      29.4                           12001491.0000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:01:57  165990.7      0.00       0.0       0.0                           11891144.0000
+    0:01:57  165990.7      0.00       0.0       0.0                           11891144.0000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:57  165990.7      0.00       0.0       0.0                           11891144.0000
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+    0:01:59  154514.6      0.00       0.0       0.0                           10437272.0000
+    0:01:59  154514.6      0.00       0.0       0.0                           10437272.0000
+    0:01:59  154514.6      0.00       0.0       0.0                           10437272.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:00  152997.8      0.00       0.0       0.0                           10248642.0000
+    0:02:00  151424.4      0.00       0.0       0.0                           10131980.0000
+    0:02:00  151404.4      0.00       0.0       0.0                           10128022.0000
+    0:02:00  151404.4      0.00       0.0       0.0                           10128022.0000
+    0:02:01  151184.9      0.00       0.0       0.0                           10105861.0000
+    0:02:01  149917.5      0.00       0.0       0.0                           9978874.0000
+    0:02:01  149917.5      0.00       0.0       0.0                           9978874.0000
+    0:02:01  149917.5      0.00       0.0       0.0                           9978874.0000
+    0:02:01  149917.5      0.00       0.0       0.0                           9978874.0000
+    0:02:03  143720.4      0.00       0.0       0.0                           9285574.0000
+Loading db file '/home/sasasatori/synopsys_workplace/dw_fp_mac/lib/logic/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/slow.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00  143720.4      0.00       0.0       0.0                           9285574.0000
+    0:00:00  143720.4      0.00       0.0       0.0                           9285574.0000
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01  143720.4      0.00       0.0       0.0                           9285574.0000
+    0:00:01  143720.4      0.00       0.0       0.0                           9285574.0000
+    0:00:01  143720.4      0.00       0.0       0.0                           9285574.0000
+    0:00:01  143720.4      0.00       0.0       0.0                           9285574.0000
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01  143384.5      0.01       0.1       0.0                           9257916.0000
+    0:00:01  143384.5      0.01       0.1       0.0                           9257916.0000
+    0:00:02  143377.8      0.01       0.2       0.0                           9258336.0000
+    0:00:02  143377.8      0.01       0.2       0.0                           9258336.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+
+
+  Beginning Design Rule Fixing  (max_transition)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02  143860.1      0.00       0.0       0.0                           9320978.0000
+    0:00:02  143860.1      0.00       0.0       0.0                           9321063.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02  143723.8      0.00       0.0       0.0                           9303577.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+    0:00:03  143587.4      0.00       0.0       0.0                           9292914.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03  773730.5      0.00       0.0       0.0                           9292914.0000
+    0:00:03  773730.5      0.00       0.0       0.0                           9292914.0000
+    0:00:04  772306.8      0.00       0.0       0.0                           9112216.0000
+    0:00:04  772306.8      0.00       0.0       0.0                           9112216.0000
+    0:00:05  771967.4      0.00       0.0       0.0                           9079410.0000
+Loading db file '/home/sasasatori/synopsys_workplace/dw_fp_mac/lib/logic/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# analyze and resolve design problems
+source ./scripts/dc_post_syn.tcl
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/sasasatori/synopsys_workplace/dw_fp_mac/work/dc/outputs/dw_fp_mac_post_dc.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Writing ddc file './outputs/dw_fp_mac_post_dc.ddc'.
+Writing verilog file '/home/sasasatori/synopsys_workplace/dw_fp_mac/work/dc/outputs/dw_fp_mac_post_dc.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+dc_shell> exit
+
+Memory usage for main task 327 Mbytes.
+Memory usage for this session 327 Mbytes.
+CPU usage for this session 135 seconds ( 0.04 hours ).
+
+Thank you...

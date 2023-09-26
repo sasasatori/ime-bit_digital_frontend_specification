@@ -1,0 +1,32 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "tb_dw_fp_mac": [
+        "tb_dw_fp_mac",
+        "Zvgr6",
+        "module",
+        6
+    ],
+    "DW_fp_ifp_conv": [
+        "DW_fp_ifp_conv",
+        "JD7DA",
+        "module",
+        3
+    ],
+    "DW_ifp_mult": [
+        "DW_ifp_mult",
+        "uxTA9",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        5
+    ]
+}

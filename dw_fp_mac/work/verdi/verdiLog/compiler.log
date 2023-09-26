@@ -1,0 +1,15 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -sv
+    -f ../../prj/filelist.f
+        ../../src/rtl/dw_fp_mac.sv
+        ../../tb/tb_dw_fp_mac.sv
+
+Highest level modules:
+tb_dw_fp_mac
+
+
+*Error* view DW_fp_mac is not defined for instance U1
+"../../src/rtl/dw_fp_mac.sv", 12: 
+Total	1 error(s),   0 warning(s)

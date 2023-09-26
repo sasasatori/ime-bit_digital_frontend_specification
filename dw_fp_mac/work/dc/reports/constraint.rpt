@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : dw_fp_mac
+Version: O-2018.06-SP1
+Date   : Tue Sep 26 16:23:19 2023
+****************************************
+
+
+    Design: dw_fp_mac
+
+    max_area               0.00
+  - Current Area       771967.44
+  ------------------------------
+    Slack              -771967.44  (VIOLATED)
+
+
+    Design: dw_fp_mac
+
+    max_leakage_power          0.00
+  - Current Leakage Power  8562582.00
+  ----------------------------------
+    Slack                  -8562582.00  (VIOLATED)
+
+
+1

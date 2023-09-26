@@ -1,0 +1,18 @@
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Sep 24 19:08 2023
+VCD+ Writer O-2018.09-SP2_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+The file '/home/sasasatori/synopsys_workplace/dw_fp_mac/work/vcs/inter.vpd' was opened successfully.
+Simulation complete, time is 0 ns.
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Sep 24 19:08 2023
+VCD+ Writer O-2018.09-SP2_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+The file '/home/sasasatori/synopsys_workplace/dw_fp_mac/work/vcs/inter.vpd' was opened successfully.
+Warning: [DVSW307] 
+Could not find any driver for parameter: 'dw_fp_mac.inst_sig_width[31:0]'.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ns
+CPU Time:      0.060 seconds;       Data structure size:   0.0Mb
+Sun Sep 24 19:08:48 2023
+Updating preference file: /home/sasasatori/.synopsys_dve_prefs.tcl

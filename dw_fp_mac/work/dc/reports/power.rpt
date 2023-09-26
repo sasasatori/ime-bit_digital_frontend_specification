@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : dw_fp_mac
+Version: O-2018.06-SP1
+Date   : Tue Sep 26 16:23:19 2023
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /home/sasasatori/synopsys_workplace/dw_fp_mac/lib/logic/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dw_fp_mac              smic18_wl10       slow
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   3.1860 mW   (39%)
+  Net Switching Power  =   4.9122 mW   (61%)
+                         ---------
+Total Dynamic Power    =   8.0982 mW  (100%)
+
+Cell Leakage Power     =   9.0794 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      3.1860            4.9122        9.0794e+06            8.1073  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              3.1860 mW         4.9122 mW     9.0794e+06 pW         8.1073 mW
+1

@@ -1,0 +1,8 @@
+/home/sasasatori/synopsys_workplace/dw_fp_mac/src/rtl/dw_fp_mac.sv
+/home/sasasatori/synopsys_workplace/dw_fp_mac/tb/tb_dw_fp_mac.sv
+/tools/Synopsys/syn/O-2018.06-SP1/dw/sim_ver/DW_fp_dp2.v
+/tools/Synopsys/syn/O-2018.06-SP1/dw/sim_ver/DW_fp_ifp_conv.v
+/tools/Synopsys/syn/O-2018.06-SP1/dw/sim_ver/DW_fp_mac.v
+/tools/Synopsys/syn/O-2018.06-SP1/dw/sim_ver/DW_ifp_addsub.v
+/tools/Synopsys/syn/O-2018.06-SP1/dw/sim_ver/DW_ifp_fp_conv.v
+/tools/Synopsys/syn/O-2018.06-SP1/dw/sim_ver/DW_ifp_mult.v

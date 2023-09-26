@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dw_fp_mac
+Version: O-2018.06-SP1
+Date   : Tue Sep 26 16:23:19 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: inst_a[21] (input port clocked by vclk)
+  Endpoint: z_inst[1] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dw_fp_mac          smic18_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.00       4.00 f
+  inst_a[21] (in)                          0.00       4.00 f
+  U3382/Y (XOR2X4)                         0.26       4.26 r
+  U3061/Y (INVX8)                          0.16       4.43 f
+  U1136/Y (OAI22X1)                        0.32       4.74 r
+  U4068/S (ADDFX2)                         0.52       5.27 r
+  U571/CO (ADDFHX1)                        0.41       5.68 r
+  U4074/S (ADDFX2)                         0.63       6.30 f
+  U4084/S (ADDFHX2)                        0.36       6.66 r
+  U4090/S (ADDFHX4)                        0.41       7.07 r
+  U458/Y (MXI2X1)                          0.20       7.27 f
+  U4299/Y (OAI21X2)                        0.22       7.49 r
+  U4301/Y (AND2X4)                         0.19       7.68 r
+  U3068/CO (ADDFHX4)                       0.52       8.20 r
+  U2687/Y (NAND2X4)                        0.13       8.33 f
+  U2685/Y (OAI21X4)                        0.26       8.59 r
+  U2681/Y (AOI21X4)                        0.15       8.74 f
+  U4632/Y (OAI21X4)                        0.26       9.00 r
+  U4668/Y (INVX3)                          0.20       9.20 f
+  U1158/Y (OAI21X2)                        0.27       9.47 r
+  U4787/Y (AOI21X1)                        0.26       9.73 f
+  U2702/Y (OAI21X4)                        0.14       9.87 r
+  U2701/Y (XOR2X4)                         0.32      10.19 f
+  U299/Y (INVX4)                           0.22      10.42 r
+  U2817/Y (XNOR2X2)                        0.35      10.77 r
+  U961/Y (NAND2X2)                         0.12      10.89 f
+  U2816/Y (NOR2BX4)                        0.15      11.04 r
+  U2812/Y (NAND3X4)                        0.13      11.16 f
+  U4837/Y (NOR2X4)                         0.13      11.29 r
+  U2894/Y (OAI2BB1X4)                      0.14      11.42 f
+  U2893/Y (NAND2X4)                        0.14      11.56 r
+  U3031/Y (NOR2X4)                         0.09      11.66 f
+  U4853/Y (INVX8)                          0.13      11.78 r
+  U4854/Y (NAND2X4)                        0.16      11.95 f
+  U204/Y (BUFX16)                          0.26      12.20 f
+  U5267/Y (NAND2BX1)                       0.34      12.55 f
+  U5273/Y (NAND4X4)                        0.27      12.82 r
+  U2963/Y (NAND2X2)                        0.16      12.98 f
+  U2866/Y (NAND4X4)                        0.25      13.23 r
+  U2179/Y (NOR2X2)                         0.09      13.32 f
+  U740/Y (NAND3X1)                         0.26      13.58 r
+  U2629/Y (OAI22X4)                        0.17      13.75 f
+  U2628/Y (NAND2X4)                        0.13      13.88 r
+  U2627/Y (NAND2X4)                        0.14      14.02 f
+  U3340/Y (NAND2X4)                        0.15      14.17 r
+  U1319/Y (CLKINVX3)                       0.12      14.28 f
+  U3141/Y (NAND2X4)                        0.18      14.47 r
+  U35/Y (NAND2X1)                          0.15      14.61 f
+  U30/Y (NOR2X1)                           0.28      14.90 r
+  U5829/Y (AOI21X2)                        0.15      15.05 f
+  U5830/Y (AND2X4)                         0.25      15.30 f
+  U3318/Y (NOR2X4)                         0.20      15.50 r
+  U3317/Y (BUFX20)                         0.25      15.76 r
+  U3423/Y (NAND2X2)                        0.11      15.87 f
+  U3296/Y (OAI211X2)                       0.13      16.00 r
+  z_inst[1] (out)                          0.00      16.00 r
+  data arrival time                                  16.00
+
+  clock vclk (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -4.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                 -16.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

@@ -1,0 +1,31 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./dw_fp_mac -args {-ucligui  } -dir .
+gui_src_highlight_item -id Source.1 -lfrom 12 -idxfrom 0 -fileIdFrom 0 -lto 12 -idxto 9 -fileIdTo 0 -selection {DW_fp_mac} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 12 -idxfrom 0 -fileIdFrom 0 -lto 12 -idxto 9 -fileIdTo 0 -selection {DW_fp_mac} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 12 -idxfrom 0 -fileIdFrom 0 -lto 12 -idxto 9 -fileIdTo 0 -selection {DW_fp_mac} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 12 -idxfrom 0 -fileIdFrom 0 -lto 12 -idxto 9 -fileIdTo 0 -selection {DW_fp_mac} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 12 -idxfrom 0 -fileIdFrom 0 -lto 12 -idxto 9 -fileIdTo 0 -selection {DW_fp_mac} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 12 -idxfrom 12 -fileIdFrom 0 -lto 12 -idxto 26 -fileIdTo 0 -selection {inst_sig_width} -selectionId 0 -replace 0
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Source.1 { {dw_fp_mac.inst_sig_width[31:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 445
+gui_sim_continue  
+gui_sim_restart
+gui_list_select -id Wave.1 -selected  { {dw_fp_mac.inst_sig_width[31:0]}   }
+gui_list_action -id  Wave.1 {dw_fp_mac.inst_sig_width[31:0]}
+gui_get_drivers -id Wave.1 -signal {dw_fp_mac.inst_sig_width[31:0]}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_expand -id  Wave.1   {dw_fp_mac.inst_sig_width[31:0]}
+gui_close_window -window TopLevel.2

@@ -1,0 +1,311 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_fp_ifp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_mult' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_mult' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_addsub' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+Warning: Instance of 'DW_ifp_fp_conv' is defined in both libraries
+	'DW02' and 'WORK', which are both visible in design 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'.
+	The first library will be used. (LINK-14)
+  Allocating blocks in 'DW_fp_mac_sig_width23_exp_width8_ieee_compliance0'
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'pparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'pparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'pparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+  Allocating blocks in 'DW_fp_ifp_conv_sig_widthi23_exp_widthi8_sig_widtho25_exp_widtho8_use_denormal0_use_1scmpl0'
+  Allocating blocks in 'DW_ifp_mult_sig_widthi25_exp_widthi8_sig_widtho31_exp_widtho9'
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'pparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+  Allocating blocks in 'DW_ifp_addsub_sig_widthi31_exp_widthi9_sig_widtho32_exp_widtho10_use_denormal0_use_1scmpl0'
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+  Allocating blocks in 'DW_ifp_fp_conv_sig_widthi32_exp_widthi10_sig_width23_exp_width8_use_denormal0'
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'pparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+  Allocating blocks in 'DW_lzd_a_width33'
+  Allocating blocks in 'DW_lzod_a_width33_detect_10'
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+  Allocating blocks in 'DW_lzd_a_width52'
+  Allocating blocks in 'DW_lzod_a_width52_detect_10'
+  Allocating blocks in 'DW01_ash_A_width54_SH_width10'
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Warning: Dont_touch on net '*cell*70/M_2scompl[0]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[1]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[2]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[3]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[4]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[5]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[6]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[7]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[8]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[9]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[10]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[11]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[12]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[13]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[14]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[15]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[16]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[17]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[18]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[19]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[20]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[21]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[22]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[23]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/M_2scompl[24]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[0]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[1]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[2]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[3]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[4]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[5]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[6]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[7]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[8]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[9]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[10]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[11]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[12]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[13]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[14]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[15]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[16]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[17]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[18]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[19]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[20]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[21]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/a[22]' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*70/*Logic0*' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N110' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N109' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N108' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N107' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N106' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N105' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N104' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N103' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/N102' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*82/*Logic0*' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net '*cell*84/*Logic0*' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'smic18_wl10'. (OPT-170)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
